@@ -1,0 +1,151 @@
+
+
+.tab{
+    width: 180px;
+    height: 25px;
+    text-align: center;
+    margin:-30px -10px;
+   
+    list-style: none;
+   font-size: 20px;
+   font-family: "GothamRnd-Bold", Helvetica, Arial, sans-serif;
+   letter-spacing: .1em;
+   background: #1ab188;
+   color: #ffffff;
+  
+}
+    
+
+
+
+a {
+  text-decoration: none;
+  color: #1ab188;
+  -webkit-transition: .5s ease;
+          transition: .5s ease;
+    font-family: "GothamRnd-Bold", Helvetica, Arial, sans-serif;
+}
+
+
+.form {
+    float: left;
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+   margin: -485px 650px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+
+
+
+.tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+
+
+h1 {
+    
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 60px 0px;
+    font-family: "GothamRnd-Bold", Helvetica, Arial, sans-serif;
+}
+
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+          transform: translateY(6px);
+  left: -10px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+    font-family: "GothamRnd-Bold", Helvetica, Arial, sans-serif;
+}
+label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+label.active {
+  -webkit-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+    font-family: "GothamRnd-Bold", Helvetica, Arial, sans-serif;
+}
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #ffffff;
+}
+
+input, textarea {
+ margin: 0 -15px;
+ font-size: 22px;
+  display: block;
+  width: 250px;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+          transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+.button {
+    
+    border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  -webkit-appearance: none;
+    font-family: "GothamRnd-Bold", Helvetica, Arial, sans-serif;
+}
+
+
+.button-block {
+    float: left;
+  display: block;
+  margin: 15px 35px;
+    
+    
+}
+
+.forgot {
+  margin-top:-20px -20;
+  text-align:right;
+    
+}
