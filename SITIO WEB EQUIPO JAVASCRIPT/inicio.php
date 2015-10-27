@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -80,7 +80,7 @@
 				</li>
 				<li>
 					<a href="contacto.php">
-						<img src="images/6.jpg" alt=""/>
+						<img src="images/7.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">CONTACTO</span>
@@ -229,42 +229,23 @@
       </ul>  
           <h1>¡BIENVENIDO!</h1>
           
-          <form action="/" method="post">
+          <form action="validar_usuario.php" method="POST">
+                 <span class="Estilo3"><strong>Usuario</strong>:</span>
+                 <input type="text" name="usuario"  size="15" required>
+                 <br><br>
+                 <span class="Estilo3"><strong>Contraseña:</strong></span>
+                 <input type="password" name="password" size="15" required>
+                 <br>
+                 <strong><br>
+                 <input name="Enviar" type="submit" class="Estilo3" style= "color: #003366; background-color: #99CCFF"  value="Ingresar">
+                 </strong>
+           </form>	
+                 <p class="forgot"><a href="insertar_usu.php">REGISTRARME</a></p>
           
-            <div class="field-wrap">
-            <label>
-              USUARIO<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              CONTRASEÑA<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-          
-          <p class="forgot"><a href="#">REGISTRARME</a></p>
-          
-          <button class="button button-block"/>ACEPTAR</button>
-          
-          </form>
+                 <button class="button button-block"/>ACEPTAR</button>
+          	
 
-        </div>
-        
-     
-      
-</div> <!-- /form -->    
- <script src="js/index.js"></script>
-
-
-            
-        </div>
-    
-    
-    
-    
+ 
     
 </body>
 </html>
