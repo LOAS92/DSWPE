@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>INICIO</title>
+<title>NOVEDADES</title>
 <link href="css/catalogo/catalogo.css" rel="stylesheet" type="text/css"/>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <link href="css/catalogo/slider.css" rel="stylesheet" type="text/css"/>
@@ -58,7 +58,7 @@
 					
 				</li>
 				<li>
-					<a href="#">
+					<a href="tallas.php">
 						<img src="images/4.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -68,7 +68,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="carrito.php">
 						<img src="images/5.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -79,7 +79,7 @@
 				</li>
 				<li>
 					<a href="contacto.php">
-						<img src="images/7.jpg" alt=""/>
+						<img src="images/6.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">CONTACTO</span>
@@ -175,7 +175,7 @@
 				<li><a class="default">NOVEDADES</a></li>
 				<li><a href="primavera.php">PRIMAVERA</a></li>
 				<li><a href="verano.php">VERANO</a></li>
-				<li><a href="otoño.php">OTOÑO</a></li>
+				<li><a href="otono.php">OTOÑO</a></li>
 				<li><a href="invierno.php">INVIERNO</a></li>
 				<li><a href="patrias.php">FIESTAS PATRIAS</a></li>
 				<li><a href="hallowen.php">HALLOWEN</a></li>
@@ -201,8 +201,8 @@
         
         <ul id="slider" class="slider-wrapper">
             <li class="slide-current">
-                
-                <img src="imagenes/imagenes slider/10.jpg"  alt="slider imagen1">
+            
+             <img src="imagenes/imagenes slider/10.jpg"  alt="slider imagen1">
                 <div class="caption">
                     
                     <h3 class="caption-title">PRIMAVERA</h3>
@@ -222,11 +222,30 @@
 					</div>
                 
             </li>
-			
-			
-			  <li>
+            <li>
                 
-                <img src="imagenes/imagenes slider/11.jpg" alt="slider imagen1">
+                <img src="imagenes/imagenes slider/oto.jpg" alt="slider imagen1">
+                <div class="caption">
+                    
+                    <h3 class="caption-title">OTOÑO</h3>
+                    <P>PARA ESTA  EPOCA NO HAY  COMO ESTA  ROPA</P>
+                </div>
+                
+            </li>
+			
+			
+			<li>
+			<img src="imagenes/imagenes slider/invierno.jpg" alt="slider imagen1">
+                <div class="caption">
+                    
+                    <h3 class="caption-title">INVIERNO</h3>
+                    <P>PARA QUE NO PASEN FRIOS</P>
+                </div>
+                
+            </li>
+            
+            <li>
+              <img src="imagenes/imagenes slider/11.jpg" alt="slider imagen1">
                 <div class="caption">
                     
                     <h3 class="caption-title">FIESTAS PATRIAS</h3>
@@ -234,8 +253,8 @@
 					</div>
                 
             </li>
-			
-              <li>
+
+             <li>
                 
                 <img src="imagenes/imagenes slider/8.jpg" alt="slider imagen1">
                 <div class="caption">
@@ -245,14 +264,14 @@
 					</div>
                 
             </li>
-            
-         <li>
-                
-                <img src="imagenes/imagenes slider/9.jpg" alt="slider imagen1">
+
+            <li>
+			
+			<img src="imagenes/imagenes slider/navidad.jpg" alt="slider imagen1">
                 <div class="caption">
                     
                     <h3 class="caption-title">NAVIDAD</h3>
-                    <P>NO HAY COMO EMPEZAR EL AÑO JUNTO A ELLOS</P>
+                    <P>NO HAY COMO PASAR LA NAVIDAD JUNTO A ELLOS</P>
                 </div>
                 
             </li>

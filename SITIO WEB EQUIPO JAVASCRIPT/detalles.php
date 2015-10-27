@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>INICIO</title>
+<title>OTOÑO</title>
 <link href="css/catalogo/accesorios.css" rel="stylesheet" type="text/css"/>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
@@ -60,7 +60,7 @@
 					
 				</li>
 				<li>
-					<a href="tallas.php">
+					<a href="#">
 						<img src="images/4.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -70,7 +70,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="carrito.php">
+					<a href="#">
 						<img src="images/5.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -80,7 +80,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="contacto.php">
+					<a href="#">
 						<img src="images/6.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -165,34 +165,15 @@
 	   
 	    <div id="menu-vertical">
           
-            <h1 class="encabezado"><a href="catalogo.php">CATALOGO </a></h1>
+            <h1 class="encabezado"><a href="novedades.php">NOVEDADES </a></h1>
+
+
+		<br>
+		<br>
 
 
 
 
-<dl class="dropdown">
-	<dt><a><span>ACCESORIOS</span></a></dt>
-		<dd>
-			<ul>
-				<li><a class="default">ACCESORIOS</a></li>
-				<li><a  href="accesorios.php" > ACCESORIOS PARA PERROS</a></li>
-				<li><a  href="accesoriosgato.php">ACCESORIOS PARA GATOS</a></li>
-				
-			</ul>
-		</dd>
-</dl>
-
-<dl class="dropdown">
-	<dt><a><span>ROPA</span></a></dt>
-		<dd>
-			<ul>
-				<li><a class="default">ROPA</a></li>
-				<li><a href="ropaperro.php" >ROPA PARA PERROS</a></li>
-				<li><a href="ropagato.php">ROPA PARA GATOS</a></li>
-				
-			</ul>
-		</dd>
-</dl>
 	    <h1 class="encabezado2"><a href="inicio.php">INICIO </a></h1>
 	    <script src="js/horizontal.js"></script>  
 
@@ -203,18 +184,20 @@
 							
 							<?php
 		include 'conexion.php';
-		$con="select * from productos LIMIT 30,10"; 
-		$re=mysql_query($con)or die(mysql_error());
+		//$con="select * from productos where id=".$_GET['id']; 
+		$re=mysql_query("select * from productos  where id=".$_GET['id'])or die(mysql_error());
 		while ($f=mysql_fetch_array($re)) {
 		?>
 							
-			<div class="producto">
+			
 			<center>
-				<img src="imagenes/productos/<?php echo $f['imagen'];?>"><br>
-				<span class="span"><?php echo utf8_encode($f['nombre']);?></span><br>
-				<a href="./detalles.php?id=<?php echo $f['id'];?>">ver</a>
+				<img src="imagenes/productos/<?php echo $f['imagen'];?>"><br><br>
+				<span class="span"><?php echo utf8_encode($f['nombre']);?></span><br><br>
+				<span class="span">Precio $<?php echo utf8_encode($f['precio']);?></span><br><br>
+				<span class="span">Descripcion:  <?php echo utf8_encode($f['descripcion']);?></span><br><br>
+				<a href="./carrito.php?id=<?php echo $f['id'];?>">Añadir al  carrito de  compras</a>
 			</center>
-		</div>
+	
 		<?php
           
               }     

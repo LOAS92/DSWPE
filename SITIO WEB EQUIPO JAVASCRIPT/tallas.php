@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>INICIO</title>
-<link href="css/catalogo/accesorios.css" rel="stylesheet" type="text/css"/>
+<title>TALLAS</title>
+<link href="css/catalogo/catalogo.css" rel="stylesheet" type="text/css"/>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/catalogo/slider.css" rel="stylesheet" type="text/css"/>
 
  <link rel="stylesheet" href="css/catalogo/reset.css">
   
@@ -14,10 +15,8 @@
  
  <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/main.js"></script>
-	<script type="text/javascript"  src="js/scripts.js"></script>
 	 <script src="js/horizontal.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	
 </head>
 <body id="cuerpo">
     <div id="barra-logo">
@@ -28,7 +27,7 @@
               <ul id="sdt_menu" class="sdt_menu">
 				<li>
 					<a href="inicio.php">
-						<img src="images/2.jpg" alt=""/>
+						<img src="images/1.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">INICIO</span>
@@ -38,7 +37,7 @@
 				</li>
 				<li>
 					<a href="catalogo.php">
-						<img src="images/1.jpg" alt=""/>
+						<img src="images/2.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">CATALOGO</span>
@@ -46,8 +45,7 @@
 							
 						</span>
 					</a>
-					
-				</li>
+					</li>
 				<li>
 					<a href="novedades.php">
 						<img src="images/3.jpg" alt=""/>
@@ -70,7 +68,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="carrito.php">
+					<a href="#">
 						<img src="images/5.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -80,7 +78,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="contacto.php">
+					<a href="#">
 						<img src="images/6.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -165,63 +163,97 @@
 	   
 	    <div id="menu-vertical">
           
-            <h1 class="encabezado"><a href="catalogo.php">CATALOGO </a></h1>
-
-
-
+            <h1 class="encabezado"><a href="tallas.php">TALLAS </a></h1>
 
 <dl class="dropdown">
-	<dt><a><span>ACCESORIOS</span></a></dt>
+	<dt><a><span>TABLA DE TALLAS</span></a></dt>
 		<dd>
 			<ul>
-				<li><a class="default">ACCESORIOS</a></li>
-				<li><a  href="accesorios.php" > ACCESORIOS PARA PERROS</a></li>
-				<li><a  href="accesoriosgato.php">ACCESORIOS PARA GATOS</a></li>
-				
+				<li><a class="default">TALLAS</a></li>
+				<li><a href="perros.php">PERROS</a></li>
+				<li><a href="gatos.php">GATOS</a></li>
 			</ul>
 		</dd>
 </dl>
 
-<dl class="dropdown">
-	<dt><a><span>ROPA</span></a></dt>
-		<dd>
-			<ul>
-				<li><a class="default">ROPA</a></li>
-				<li><a href="ropaperro.php" >ROPA PARA PERROS</a></li>
-				<li><a href="ropagato.php">ROPA PARA GATOS</a></li>
-				
-			</ul>
-		</dd>
-</dl>
-	    <h1 class="encabezado2"><a href="inicio.php">INICIO </a></h1>
+
+
+
+
+     <h1 class="encabezado2"><a href="inicio.php">INICIO </a></h1>
+	   
 	    <script src="js/horizontal.js"></script>  
 
 	   
         </div>
 		
-		            <div id="catalogo-general">
-							
-							<?php
-		include 'conexion.php';
-		$con="select * from productos LIMIT 30,10"; 
-		$re=mysql_query($con)or die(mysql_error());
-		while ($f=mysql_fetch_array($re)) {
-		?>
-							
-			<div class="producto">
-			<center>
-				<img src="imagenes/productos/<?php echo $f['imagen'];?>"><br>
-				<span class="span"><?php echo utf8_encode($f['nombre']);?></span><br>
-				<a href="./detalles.php?id=<?php echo $f['id'];?>">ver</a>
-			</center>
-		</div>
-		<?php
+		           
           
-              }     
+					 <section class="contenedor slider">
+         
+        
+        <ul id="slider" class="slider-wrapper">
+            <li class="slide-current">
+                
+                <img src="imagenes/medida/tallas.png"  alt="slider imagen1">
+                <div class="caption">
+                    
+                    <h3 class="caption-title">TALLAS</h3>
+                    <P>TALLAS PARA PERRO
+                    </P>
+                </div>
+                
+            </li>
+            
+              <li>
+                
+                <img src="imagenes/medida/perro.png" alt="slider imagen1">
+                <div class="caption">
+                    
+                    <h3 class="caption-title">COMO MEDIR A TU  PERRO</h3>
+                    
+					</div>
+                
+            </li>
+            
+         <li>
+                
+                <img src="imagenes/medida/gatotallas.jpg" alt="slider imagen1">
+                <div class="caption">
+                    
+                    <h3 class="caption-title">TALLAS</h3>
+                    <P>TALLAS PARA TU  GATO</P>
+                </div>
+                
+            </li>
+			<li>
+			
+			<img src="imagenes/medida/gato.jpg" alt="slider imagen1">
+                <div class="caption">
+                    
+                    <h3 class="caption-title">COMO MEDIR A  TU  GATO</h3>
+                  
+                </div>
+                
+            </li>
+			
+        
+        </ul>
+        
+       <!-- controles-->
+       <ul id="controles" class="controles">
+             </ul>
+      
+       
+    </section>   
+            
           
-          ?>
           
-          </div> 
+          
+          
+          
+          
+          
 
 		</div>
     

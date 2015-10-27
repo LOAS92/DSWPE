@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -80,7 +80,7 @@
 				</li>
 				<li>
 					<a href="contacto.php">
-						<img src="images/7.jpg" alt=""/>
+						<img src="images/6.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">CONTACTO</span>
@@ -249,7 +249,20 @@
           
           <button class="button button-block"/>ACEPTAR</button>
           
-          </form>    
+          </form>
+
+        </div>
+        
+     
+      
+</div> <!-- /form -->    
+ <script src="js/index.js"></script>
+
+
+            
+        </div>
+    
+    
     
     
     

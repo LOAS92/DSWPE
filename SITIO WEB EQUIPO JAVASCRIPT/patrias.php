@@ -60,7 +60,7 @@
 					
 				</li>
 				<li>
-					<a href="#">
+					<a href="tallas.php">
 						<img src="images/4.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -70,7 +70,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="carrito.php">
 						<img src="images/5.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -163,10 +163,9 @@
        </div>
        
 	   
-	    <div id="menu-vertical">
+	   <div id="menu-vertical">
           
             <h1 class="encabezado"><a href="novedades.php">NOVEDADES </a></h1>
-
 
 
 
@@ -178,7 +177,7 @@
 				<li><a class="default">NOVEDADES</a></li>
 				<li><a href="primavera.php">PRIMAVERA</a></li>
 				<li><a href="verano.php">VERANO</a></li>
-				<li><a href="otoño.php">OTOÑO</a></li>
+				<li><a href="otono.php">OTOÑO</a></li>
 				<li><a href="invierno.php">INVIERNO</a></li>
 				<li><a href="patrias.php">FIESTAS PATRIAS</a></li>
 				<li><a href="hallowen.php">HALLOWEN</a></li>
@@ -206,9 +205,9 @@
 							
 			<div class="producto">
 			<center>
-				<img src="imagenes/novedades/patrias/<?php echo $f['imagen'];?>"><br>
+				<img src="imagenes/productos/<?php echo $f['imagen'];?>"><br>
 				<span class="span"><?php echo utf8_encode($f['nombre']);?></span><br>
-				<a href="./detalles.php">ver</a>
+				<a href="./detalles.php?id=<?php echo $f['id'];?>">ver</a>
 			</center>
 		</div>
 		<?php

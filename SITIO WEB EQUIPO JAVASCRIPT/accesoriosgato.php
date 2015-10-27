@@ -60,7 +60,7 @@
 					
 				</li>
 				<li>
-					<a href="#">
+					<a href="tallas.php">
 						<img src="images/4.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -70,7 +70,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="carrito.php">
 						<img src="images/5.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -80,7 +80,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="contacto.php">
 						<img src="images/6.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -211,9 +211,9 @@
 							
 			<div class="producto">
 			<center>
-				<img src="imagenes/accesorios/gatos/<?php echo $f['imagen'];?>"><br>
+				<img src="imagenes/productos/<?php echo $f['imagen'];?>"><br>
 				<span class="span"><?php echo utf8_encode($f['nombre']);?></span><br>
-				<a href="./detalles.php">ver</a>
+				<a href="./detalles.php?id=<?php echo $f['id'];?>">ver</a>
 			</center>
 		</div>
 		<?php

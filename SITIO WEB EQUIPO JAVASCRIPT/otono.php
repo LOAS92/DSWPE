@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>INICIO</title>
+<title>OTOÑO</title>
 <link href="css/catalogo/accesorios.css" rel="stylesheet" type="text/css"/>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
@@ -165,34 +165,29 @@
 	   
 	    <div id="menu-vertical">
           
-            <h1 class="encabezado"><a href="catalogo.php">CATALOGO </a></h1>
+            <h1 class="encabezado"><a href="novedades.php">NOVEDADES </a></h1>
 
 
 
 
 <dl class="dropdown">
-	<dt><a><span>ACCESORIOS</span></a></dt>
+	<dt><a><span>PARA TODO EL AÑO</span></a></dt>
 		<dd>
 			<ul>
-				<li><a class="default">ACCESORIOS</a></li>
-				<li><a  href="accesorios.php" > ACCESORIOS PARA PERROS</a></li>
-				<li><a  href="accesoriosgato.php">ACCESORIOS PARA GATOS</a></li>
+				<li><a class="default">NOVEDADES</a></li>
+				<li><a href="primavera.php">PRIMAVERA</a></li>
+				<li><a href="verano.php">VERANO</a></li>
+				<li><a href="otono.php">OTOÑO</a></li>
+				<li><a href="invierno.php">INVIERNO</a></li>
+				<li><a href="patrias.php">FIESTAS PATRIAS</a></li>
+				<li><a href="hallowen.php">HALLOWEN</a></li>
+				<li><a href="navidad.php">NAVIDAD</a></li>
 				
 			</ul>
 		</dd>
 </dl>
 
-<dl class="dropdown">
-	<dt><a><span>ROPA</span></a></dt>
-		<dd>
-			<ul>
-				<li><a class="default">ROPA</a></li>
-				<li><a href="ropaperro.php" >ROPA PARA PERROS</a></li>
-				<li><a href="ropagato.php">ROPA PARA GATOS</a></li>
-				
-			</ul>
-		</dd>
-</dl>
+
 	    <h1 class="encabezado2"><a href="inicio.php">INICIO </a></h1>
 	    <script src="js/horizontal.js"></script>  
 
@@ -203,7 +198,7 @@
 							
 							<?php
 		include 'conexion.php';
-		$con="select * from productos LIMIT 30,10"; 
+		$con="select * from productos LIMIT 60,10"; 
 		$re=mysql_query($con)or die(mysql_error());
 		while ($f=mysql_fetch_array($re)) {
 		?>
