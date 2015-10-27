@@ -240,7 +240,7 @@
                  <input name="Enviar" type="submit" class="Estilo3" style= "color: #003366; background-color: #99CCFF"  value="Ingresar">
                  </strong>
            </form>	
-                 <p class="forgot"><a href="insertar_usu.php">REGISTRARME</a></p>
+                 <p class="forgot"><a href="login.php">REGISTRARME</a></p>
           
                  <button class="button button-block"/>ACEPTAR</button>
           	
