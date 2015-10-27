@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.0.4
 -- http://www.phpmyadmin.net
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 21-10-2015 a las 01:40:27
--- Versión del servidor: 5.6.17
--- Versión de PHP: 5.5.12
+-- Servidor: localhost
+-- Tiempo de generación: 17-10-2015 a las 04:02:44
+-- Versión del servidor: 5.6.12-log
+-- Versión de PHP: 5.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `animals home`
 --
+CREATE DATABASE IF NOT EXISTS `animals home` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
+USE `animals home`;
 
 -- --------------------------------------------------------
 
@@ -40,26 +42,26 @@ CREATE TABLE IF NOT EXISTS `productos` (
 --
 
 INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `imagen`, `precio`) VALUES
-(1, 'Cama alfombra', 'Excelente cama la cual tu perro se volverá loco.', '1.jpg', 300),
-(2, 'Castijuegos', 'Castillo de juegos para tu perro, el cual ya no tendrá por que explotar la sala.', '2.jpg', 400),
-(3, 'Cama dona', 'Excelente cama en forma de dona.', '4.jpg', 450),
-(4, 'Cama desplegable', 'Casa desplegable para tu perro excelente comodidad.', '3.jpg', 400),
-(5, 'Moño elegante', 'Este moño le dará una apariencia espectacular a tu perro.', '5.jpg', 200),
-(6, 'Seccion de correas', 'Excelentes sección de correas para darle un toque especial a tu perro.', '6.jpg', 150),
-(7, 'Moños cool', 'Excelente moño para hacer de tu perro la envidia de tu colonia.', '7.jpg', 200),
-(8, 'Cama rosa', 'Excelente cama con mayor comodidad para tu perro.', '8.jpg', 350),
-(9, 'Cama pro', 'Esta cama traerá loco a tu perro, y sera la envidia de tus vecinos.', '9.jpg', 500),
-(10, 'Casa cueva', 'Maravillosa casa den forma de cueva, para que inverne tu perro por horas.', '10.jpg', 400),
-(11, 'Vaso juego', 'Excelente juego para entretener a tu gato.', '1.jpg', 250),
-(12, 'Castijuegos', 'Castillo de juegos para tu gato, el cual ya no tendrá por que explotar la sala.', '2.jpg', 320),
-(13, 'Cama pantunfla\r\n', 'Excelente cama en forma de pantumfla.', '3.jpg', 280),
-(14, 'Juego pelota', 'Juego con pelota el cual tendrá toda la atención de tu gato.', '4.jpg', 390),
-(15, 'Cama pro', 'Excelente cama que asemeja tu propia cama.', '5.jpg', 550),
-(16, 'Arenero', 'tu sabes por que.', '6.jpg', 500),
-(17, 'Ratones', 'Enseña a tu gato a cazar con estos bonitos ratones.', '7.jpg', 150),
-(18, 'Sección de juegos', 'Sección de juegos con pelotas.', '8.jpg', 350),
-(19, 'Rascadero', 'Ya no habrá motivos para pegarle a tu gato, ya que este articulo tiene los beneficios de salvar tus sillones o sala.', '9.jpg', 360),
-(20, 'Arenero baño', 'Excelente arenero en forma de baño humano.', '10.jpg', 600),
+(1, 'Cama alfombra', 'Excelente cama la cual tu perro se volverá loco.', '1ap.jpg', 300),
+(2, 'Castijuegos', 'Castillo de juegos para tu perro, el cual ya no tendrá por que explotar la sala.', '2ap.jpg', 400),
+(3, 'Cama dona', 'Excelente cama en forma de dona.', '4ap.jpg', 450),
+(4, 'Cama desplegable', 'Casa desplegable para tu perro excelente comodidad.', '3ap.jpg', 400),
+(5, 'Moño elegante', 'Este moño le dará una apariencia espectacular a tu perro.', '5ap.jpg', 200),
+(6, 'Seccion de correas', 'Excelentes sección de correas para darle un toque especial a tu perro.', '6ap.jpg', 150),
+(7, 'Moños cool', 'Excelente moño para hacer de tu perro la envidia de tu colonia.', '7ap.jpg', 200),
+(8, 'Cama rosa', 'Excelente cama con mayor comodidad para tu perro.', '8ap.jpg', 350),
+(9, 'Cama pro', 'Esta cama traerá loco a tu perro, y sera la envidia de tus vecinos.', '9ap.jpg', 500),
+(10, 'Casa cueva', 'Maravillosa casa den forma de cueva, para que inverne tu perro por horas.', '10ap.jpg', 400),
+(11, 'Vaso juego', 'Excelente juego para entretener a tu gato.', '1ag.jpg', 250),
+(12, 'Castijuegos', 'Castillo de juegos para tu gato, el cual ya no tendrá por que explotar la sala.', '2ag.jpg', 320),
+(13, 'Cama pantunfla\r\n', 'Excelente cama en forma de pantumfla.', '3ag.jpg', 280),
+(14, 'Juego pelota', 'Juego con pelota el cual tendrá toda la atención de tu gato.', '4ag.jpg', 390),
+(15, 'Cama pro', 'Excelente cama que asemeja tu propia cama.', '5ag.jpg', 550),
+(16, 'Arenero', 'tu sabes por que.', '6ag.jpg', 500),
+(17, 'Ratones', 'Enseña a tu gato a cazar con estos bonitos ratones.', '7ag.jpg', 150),
+(18, 'Sección de juegos', 'Sección de juegos con pelotas.', '8ag.jpg', 350),
+(19, 'Rascadero', 'Ya no habrá motivos para pegarle a tu gato, ya que este articulo tiene los beneficios de salvar tus sillones o sala.', '9ag.jpg', 360),
+(20, 'Arenero baño', 'Excelente arenero en forma de baño humano.', '10ag.jpg', 600),
 (21, 'chaleco', 'Excelente chaleco para que tu perro no pase mas frió.', 'rop1.jpg', 250),
 (22, 'Traje colonial', 'Excelente traje para que tu perro sea la novedad en tu colonia.', 'rop2.jpg', 320),
 (23, 'Vestido colonial', 'Excelente vestido para tu perro.', 'rop3.jpg', 280),
@@ -100,26 +102,26 @@ INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `imagen`, `precio`) VALU
 (58, 'White&collar', 'Vestido de día con accesorio(collar)', 'ver8.jpg', 350),
 (59, 'White', 'Vestido para salir de día', 'ver9.png', 300),
 (60, 'Chaleco&Moño', 'Atuendo a cuadros para lucir a tu mascota', 'ver10.jpg', 320),
-(61, 'otoño', 'descripcion', 'foto', 0),
-(62, 'otoño', 'descripcion', 'foto', 0),
-(63, 'otoño', 'descripcion', 'foto', 0),
-(64, 'otoño', 'descripcion', 'foto', 0),
-(65, 'otoño', 'descripcion', 'foto', 0),
-(66, 'otoño', 'descripcion', 'foto', 0),
-(67, 'otoño', 'descripcion', 'foto', 0),
-(68, 'otoño', 'descripcion', 'foto', 0),
-(69, 'otoño', 'descripcion', 'foto', 0),
-(70, 'otoño', 'descripcion', 'foto', 0),
-(71, 'invierno', 'descripcion', 'foto', 0),
-(72, 'invierno', 'descripcion', 'foto', 0),
-(73, 'invierno', 'descripcion', 'foto', 0),
-(74, 'invierno', 'descripcion', 'foto', 0),
-(75, 'invierno', 'descripcion', 'foto', 0),
-(76, 'invierno', 'descripcion', 'foto', 0),
-(77, 'invierno', 'descripcion', 'foto', 0),
-(78, 'invierno', 'descripcion', 'foto', 0),
-(79, 'invierno', 'descripcion', 'foto', 0),
-(80, 'invierno', 'descripcion', 'foto', 0),
+(61, 'Trajes', 'Para que tu  perro se  vea elegante  en esta temporada', 'oto1.jpg', 350),
+(62, 'Gorros', 'Gorros hermosos de acuerdo ala  temporada ', 'otog1.jpg', 150),
+(63, 'Vestido', 'Un vestido que  va  de acuerdo a  la ocasion ', 'oto2.jpg', 250),
+(64, 'Sueter', 'Un sueter que  les da un estilo elegante a  tu  gato', 'otog2.jpg', 200),
+(65, 'Sudaderas', 'Con estas sudaderas se vera muy bien tu  mascota', 'oto3.jpg', 300),
+(66, 'Sueter Colorido', 'Este hermoso y colorido sueter para tu  gato alegre', 'otog3.jpg', 120),
+(67, 'Sueter', 'Para este inicio de frios una  buena  sudadera', 'oto4.jpg', 220),
+(68, 'Sudadera', 'Una buena sudadera para esta temporada', 'otog4.jpg', 210),
+(69, 'Elegante', 'Unos buenos moños para un estilo elegante a  la ocasion', 'oto5.jpg', 350),
+(70, 'Sueter Rojo', 'Para los que  les gusta estos tonos de  colores', 'otog5.jpg', 180),
+(71, 'Abrigo Rosa', 'Para esta temporada de  frios  un buen abrigo ', 'in1.jpg', 250),
+(72, 'Gorro', 'Para los gatos que  les encanta los gorros', 'ing1.jpg', 60),
+(73, 'Conjunto', 'Conjunto de abrigo y pantalon para que  no  pasen frios', 'in2.jpg', 350),
+(74, 'Panda', 'Se vera muy tierno tu gato vestido  de  panda', 'ing2.jpg', 250),
+(75, 'Abrigo ', 'Este es un abrigo Rayado y muy calientito para tu  mascota', 'in3.jpg', 200),
+(76, 'Abrigo para Gato', 'Un buen abrigo para este tiempo  de  frios', 'ing3.jpg', 160),
+(77, 'Sueter', 'Con este sueter color azul se vera muy lindo  y estara calientito tu perro ', 'in4.jpg', 220),
+(78, 'Sueter rayado', 'Este lindo sueter para que tu  gato  no  sufra frio', 'ing4.jpg', 200),
+(79, 'Abrigo Elegante ', 'Por que en este invierno tambien se puede vestir elegante a  tu mascota', 'in5.jpg', 350),
+(80, 'Calsetas', 'Para que sus patitas no  sufran  frio estas coloridas y calientitas calsetas', 'ing5.jpg',50),
 (81, 'Blusa&Falda', 'Celebrar con comodidad', 'patria.jpg', 200),
 (82, 'fiestas patrias', 'descripcion', 'patria13.jpg', 150),
 (83, 'Adelita Tricolor', 'Metalico', 'patria2.jpg', 200),
@@ -140,17 +142,19 @@ INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `imagen`, `precio`) VALU
 (98, 'Diablito', 'Con este traje hasta tu te morirás del miedo.', 'h8.jpg', 350),
 (99, 'Conjunto de bruja', 'Conjunto de un disfraz de un brujo que por cierto es muy colorido y bonito', 'h9.jpg', 400),
 (100, 'Disfraz de calabaza', 'Disfraz de calabaza para convertir a tu linda mascota en algo aterrador.', 'h10.jpg', 450),
-(101, 'navidad', '', '', 0),
-(102, 'navidad', '', '', 0),
-(103, 'navidad', '', '', 0),
-(104, 'navidad', '', '', 0),
-(105, 'navidad', '', '', 0),
-(106, 'navidad', '', '', 0),
-(107, 'navidad', '', '', 0),
-(108, 'navidad', '', '', 0),
-(109, 'navidad', '', '', 0),
-(110, 'navidad', '', '', 0);
+(101, 'Duende', 'Con este  traje  de  duende  sera el mejor duende  de santa', 'nav1.jpg', 350),
+(102, 'Capucha', 'Para esta navidad de frios  esta capucha los  cubrira muy bien aparte  de  que estara a la moda', 'navg1.jpg', 60),
+(103, 'Traje Santa', 'Un buen traje para tu mascota de acuerdo a  la  temporada', 'nav2.jpg', 150),
+(104, 'Bufanda', 'Por que ellos  tambien  pueden lucir una hermosa bufanda de navidad', 'navg2.jpg', 250),
+(105, 'Vestido Navideño', 'Un buen vestido  para esta navidad', 'nav3.jpg', 200),
+(106, 'Gato Santa', 'Por que tu  gato  tambien  ama a santa', 'navg3.jpg', 160),
+(107, 'Conjunto Navideño', 'Para que  este bien  equipado tu mascota en esta navidad', 'nav4.jpg', 550),
+(108, 'Vestido', 'Un vestido rojo y elegante para lucir  en esta  navidad', 'navg4.jpg', 200),
+(109, 'Perro Santa', 'Quien  dijo que  tu perro no podra ser santa', 'nav5.jpg', 200),
+(110, 'Abrigo Navideño', 'Este abrigo  los mantendra muy calientitos y ademas estaran con el  estilo navideño', 'navg5.jpg', 150);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
