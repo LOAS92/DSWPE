@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 17-10-2015 a las 04:02:44
+-- Tiempo de generación: 28-10-2015 a las 00:54:58
 -- Versión del servidor: 5.6.12-log
 -- Versión de PHP: 5.4.12
 
@@ -21,6 +21,46 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `animals home` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
 USE `animals home`;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `cliente`
+--
+
+CREATE TABLE IF NOT EXISTS `cliente` (
+  `id_cliente` varchar(25) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `nombre` varchar(25) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `apellido_p` varchar(25) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `apellido_m` varchar(25) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `correo` varchar(25) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `direccion` varchar(60) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `telefono` varchar(10) COLLATE utf8mb4_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `cliente`
+--
+
+INSERT INTO `cliente` (`id_cliente`, `nombre`, `apellido_p`, `apellido_m`, `correo`, `direccion`, `telefono`) VALUES
+('loas', 'loas', 'loas', 'loas', 'loas@gmail.com', 'cubiculo 104 a', '0'),
+('dan', 'dan', 'dan', 'dan', 'dan@gmail.com', 'cubiculo 11 c', '0'),
+('jane', 'jane', 'jane', 'jane', 'jane@gmail.com', 'cubiculo 11 d', '0'),
+('pep', 'pep', 'pep', 'pep', 'pep@gmail.com', 'cubiculo 12 b', '0'),
+('fed', 'fed', 'fed', 'fed', 'fed@hotmail.com', 'cubiculo 22 d', '0'),
+('red', 'red', 'red', 'red', 'red@hotmail.com', 'planta baja edif 11 e', '0'),
+('jess', 'jess', 'jess', 'jess', 'jess@gmail.com', 'cubiculo 102 f', '0'),
+('ges', 'ges', 'ges', 'ges', 'ges@hotmail.com', 'cubito 104 c', '0'),
+('das', 'das', 'das', 'das', 'das@gmail.com', 'cubito', '0'),
+('ces', 'ces', 'ces', 'ces', 'ces@hotmail.com', 'cubo 104 f edif 104 d ', '0'),
+('va', 'va', 'va', 'va', 'va@gmail.com', 'va', '0'),
+('le', 'le', 'le', 'le', 'le@hotmail.com', 'cubito', 'l 1:00'),
+('ke', 'ke', 'KE', 'KE', 'ke@hotmail.com', 'andador a lago num 20', '1111111111'),
+('dxn', 'daniela', 'lopez', 'suarez', 'daniela@hotmail.com', 'andador a lago num 24', '2221234567'),
+('angie', 'angelica', 'cabrera', 'ramos', 'angie@gmail.com', 'U.H. san bartolo edif a int i', '1111111111'),
+('charly', 'carlos', 'perez', 'gomez', 'charly@hotmail.com', 'U.H.I. san pedro cholula num 2345 col. centro', '4444444444'),
+('chely', 'aracely', 'martinez', 'fuentes', 'chely@hotmail.com', 'av. san claudio y 14 sur num 444444', '3232323232'),
+('rojas', 'esteban', 'rojas', 'castillo', 'esteban_rojas@hotmail.com', 'avenida margaritas y 16 de septiembre num ext. 4545', '3434343434');
 
 -- --------------------------------------------------------
 
@@ -121,7 +161,7 @@ INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `imagen`, `precio`) VALU
 (77, 'Sueter', 'Con este sueter color azul se vera muy lindo  y estara calientito tu perro ', 'in4.jpg', 220),
 (78, 'Sueter rayado', 'Este lindo sueter para que tu  gato  no  sufra frio', 'ing4.jpg', 200),
 (79, 'Abrigo Elegante ', 'Por que en este invierno tambien se puede vestir elegante a  tu mascota', 'in5.jpg', 350),
-(80, 'Calsetas', 'Para que sus patitas no  sufran  frio estas coloridas y calientitas calsetas', 'ing5.jpg',50),
+(80, 'Calsetas', 'Para que sus patitas no  sufran  frio estas coloridas y calientitas calsetas', 'ing5.jpg', 50),
 (81, 'Blusa&Falda', 'Celebrar con comodidad', 'patria.jpg', 200),
 (82, 'fiestas patrias', 'descripcion', 'patria13.jpg', 150),
 (83, 'Adelita Tricolor', 'Metalico', 'patria2.jpg', 200),
@@ -152,6 +192,35 @@ INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `imagen`, `precio`) VALU
 (108, 'Vestido', 'Un vestido rojo y elegante para lucir  en esta  navidad', 'navg4.jpg', 200),
 (109, 'Perro Santa', 'Quien  dijo que  tu perro no podra ser santa', 'nav5.jpg', 200),
 (110, 'Abrigo Navideño', 'Este abrigo  los mantendra muy calientitos y ademas estaran con el  estilo navideño', 'navg5.jpg', 150);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `id_usuario` varchar(25) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `password` varchar(15) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `tipo` int(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `password`, `tipo`) VALUES
+('ges', 'ges', 0),
+('das', 'das', 0),
+('ces', 'ces', 0),
+('va', 'va', 0),
+('le', 'le', 0),
+('ke', 'ke', 0),
+('dxn', '12345', 0),
+('angie', '1111', 0),
+('charly', '2222', 0),
+('chely', '3333', 0),
+('rojas', '1212', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
