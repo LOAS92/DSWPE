@@ -64,6 +64,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Carrito de compras</title>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script  type="text/javascript"  src="js/jquery-1.11.3.min.js"></script>
+ <script type="text/javascript"  src="js/scripts1.js"></script>
+
 
 
 </head>
@@ -71,7 +74,7 @@
 	<header>
 		<h1>Carrito de  compras</h1>
 		<a href="./carrito.php" title="ver carrito de compras">
-		 <img src="./imagenes/carrito.jpg">
+		 <img src="imagenes/carrito.jpg">
 		</a>
 	</hearder>	
 		
@@ -90,8 +93,13 @@
 			<img src="imagenes/productos/<?php echo $datos[$i]['imagen']; ?>"><br>
 			<span><?php echo $datos[$i]['nombre']?></span><br>
 			<span>Precio: $<?php echo $datos[$i]['precio'];?></span><br>
-			<span>Cantidad <input type="text" value="<?php echo $datos[$i]['cantidad'];?>"></span><br>
-			<span>Subtotal: $<?php echo $datos[$i]['cantidad']*$datos[$i]['precio'];?></span><br>
+			<span>Cantidad 
+				<input type="text" value="<?php echo $datos[$i]['cantidad'];?>"
+				data-precio="<?php echo $datos[$i]['precio'];?>"
+				data-id="<?php echo $datos[$i]['id'];?>"
+				class="cantidad">
+			</span><br>
+			<span class="subtotal">Subtotal: $<?php echo $datos[$i]['cantidad']*$datos[$i]['precio'];?></span><br>
 		</center>
 	</div>
 
@@ -102,7 +110,10 @@
 	}	else{
 		echo '<center><h2>El carrito de compras esta vacio</h2></center>';
 	}	
-	echo '<center><h2>Total: $'.$total.'</h2></center>';
+	echo '<center><h2 id="total">Total: $'.$total.'</h2></center>';
+	if($total!=0){
+		echo '<center><a href="compras.php" class="aceptar">comprar</a></center>;';
+	}
 ?>
  <center><a href="./novedades.php">seguir comprando</a></center>    
  </section>   
