@@ -30,7 +30,8 @@
 											'nombre' =>$nombre,
 											'precio' =>$precio,
 											'imagen'=> $imagen,
-											'cantidad'=>1 );
+											'cantidad'=>1,
+											'talla'=>CH );
 					array_push($arreglo, $datosNuevos);
 					$_SESSION['carrito']=$arreglo;
 
@@ -52,7 +53,8 @@
 									'nombre' =>$nombre,
 									'precio' =>$precio,
 									'imagen'=> $imagen,
-									'cantidad'=>1 );
+									'cantidad'=>1,
+									'talla'=>CH );
 			$_SESSION['carrito']=$arreglo;
 		}
 	}
@@ -64,6 +66,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Carrito de compras</title>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="./css/estilo.css">
 <script  type="text/javascript"  src="js/jquery-1.11.3.min.js"></script>
  <script type="text/javascript"  src="js/scripts1.js"></script>
 
@@ -77,7 +80,7 @@
 		 <img src="imagenes/carrito.jpg">
 		</a>
 	</hearder>	
-		
+<center> 		
 <section>
 <?php
 	$total=0;
@@ -99,6 +102,7 @@
 				data-id="<?php echo $datos[$i]['id'];?>"
 				class="cantidad">
 			</span><br>
+			<span>Talla: <input type="text" value="<?php echo $datos[$i]['talla'];?>"></span><br>
 			<span class="subtotal">Subtotal: $<?php echo $datos[$i]['cantidad']*$datos[$i]['precio'];?></span><br>
 		</center>
 	</div>
@@ -106,18 +110,20 @@
 <?php
 	
 	$total=($datos[$i]['cantidad']*$datos[$i]['precio'])+$total;
-		}
-	}	else{
+	}
+	}else{
 		echo '<center><h2>El carrito de compras esta vacio</h2></center>';
 	}	
-	echo '<center><h2 id="total">Total: $'.$total.'</h2></center>';
+	echo '<center><h2 id="total">Total: $ '.$total.'</h2></center>';
 	if($total!=0){
-		echo '<center><a href="compras.php" class="aceptar">comprar</a></center>;';
+		echo '<center><a href="compras.php"  class="aceptar">comprar</a><br><br></center>';
 	}
 ?>
- <center><a href="./novedades.php">seguir comprando</a></center>    
+ 		<center><a href="./novedades.php">seguir comprando</a></center>    
  </section>   
-    
+ </center>   
+    		
+		
     
     
 </body>

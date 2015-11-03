@@ -2,21 +2,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>OTOÑO</title>
+<title>DETALLES</title>
 <link href="css/catalogo/accesorios.css" rel="stylesheet" type="text/css"/>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
-
- <link rel="stylesheet" href="css/catalogo/reset.css">
-  
- <link rel="stylesheet" href="css/catalogo/menuvertical.css">
- 
- 
- 
+<link rel="stylesheet" type="text/css" href="./css/estilo.css">
+<link rel="stylesheet" href="css/catalogo/reset.css">  
+<link rel="stylesheet" href="css/catalogo/menuvertical.css">
  <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/main.js"></script>
-	<script type="text/javascript"  src="js/scripts.js"></script>
-	 <script src="js/horizontal.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+ <script src="js/main.js"></script>
+ <script type="text/javascript"  src="js/scripts.js"></script>
+ <script src="js/horizontal.js"></script>
+ <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	
 </head>
 <body id="cuerpo">
@@ -60,7 +56,7 @@
 					
 				</li>
 				<li>
-					<a href="#">
+					<a href="tallas.php">
 						<img src="images/4.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -70,7 +66,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="carrito.php">
 						<img src="images/5.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -80,7 +76,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="contacto.php">
 						<img src="images/6.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -169,6 +165,7 @@
 
 
 		<br>
+		<center><img src="imagenes/detalles.jpg"></center>
 		<br>
 
 
@@ -180,7 +177,7 @@
 	   
         </div>
 		
-		            <div id="catalogo-general">
+		           <center> <div >
 							
 							<?php
 		include 'conexion.php';
@@ -189,7 +186,7 @@
 		while ($f=mysql_fetch_array($re)) {
 		?>
 							
-			
+		<div class="detalles">	
 			<center>
 				<img src="imagenes/productos/<?php echo $f['imagen'];?>"><br><br>
 				<span class="span"><?php echo utf8_encode($f['nombre']);?></span><br><br>
@@ -197,14 +194,14 @@
 				<span class="span">Descripcion:  <?php echo utf8_encode($f['descripcion']);?></span><br><br>
 				<a href="./carrito.php?id=<?php echo $f['id'];?>">Añadir al  carrito de  compras</a>
 			</center>
-	
+		</div>
 		<?php
           
               }     
           
           ?>
           
-          </div> 
+          </div> </center>
 
 		</div>
     
