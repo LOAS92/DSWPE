@@ -82,3 +82,19 @@ border: 0px solid #000000;
     
 }
 
+#contenedor2{
+    
+    float: left;
+     height: 950px;
+    margin:auto 165px;
+     width:1020px ;
+     background:#E6E6E6;
+	 border-radius: 0px 0px 25px 25px;
+-moz-border-radius: 0px 0px 25px 25px;
+-webkit-border-radius: 0px 0px 25px 25px;
+border: 0px solid #000000;
+    
+    
+    }
+
+
