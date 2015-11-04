@@ -246,7 +246,7 @@
             <input type="password" name="password" required/>
           </div>
           
-          <p class="forgot"><a href="login1.php">Registrame</a></p>
+          <p class="forgot"><a href="login.php">Registrame</a></p>
           
           <button type="submit"  class="button button-block"/>Ingresar</button>
           
