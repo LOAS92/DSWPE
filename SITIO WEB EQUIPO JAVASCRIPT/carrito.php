@@ -104,6 +104,7 @@
 			</span><br>
 			<span>Talla: <input type="text" value="<?php echo $datos[$i]['talla'];?>"></span><br>
 			<span class="subtotal">Subtotal: $<?php echo $datos[$i]['cantidad']*$datos[$i]['precio'];?></span><br>
+			<a href="#" class="eliminar" data-id="<?php echo $datos[$i]['id']?>">Eliminar</a>
 		</center>
 	</div>
 
