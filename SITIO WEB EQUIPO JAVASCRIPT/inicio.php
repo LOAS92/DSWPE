@@ -230,19 +230,37 @@
           <h1>¡BIENVENIDO!</h1>
           
           <form action="validar_usuario.php" method="POST">
-                 <span class="Estilo3"><strong>Usuario</strong>:</span>
-                 <input type="text" name="usuario"  size="15" required>
-                 <br><br>
-                 <span class="Estilo3"><strong>Contraseña:</strong></span>
-                 <input type="password" name="password" size="15" required>
-                 <br>
-                 <strong><br>
-                 <input name="Enviar" type="submit" class="Estilo3" style= "color: #003366; background-color: #99CCFF"  value="Ingresar">
-                 </strong>
-           </form>	
-                 <p class="forgot"><a href="login.php">REGISTRARME</a></p>
+<form action="validar_usuario.php" method="post">
           
-                 <button class="button button-block"/>ACEPTAR</button>
+            <div class="field-wrap">
+            <label>
+              Usuario<span class="req">*</span>
+            </label>
+            <input type="text" name="usuario" required/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Contraseña<span class="req">*</span>
+            </label>
+            <input type="password" name="password" required/>
+          </div>
+          
+          <p class="forgot"><a href="login1.php">Registrame</a></p>
+          
+          <button type="submit"  class="button button-block"/>Ingresar</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+   
+
+        <script src="js/index.js"></script>
+
           	
 
  
