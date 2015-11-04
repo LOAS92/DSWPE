@@ -327,7 +327,7 @@
               
           </div>
           
-        <div id="contenedor">
+       <div id="contenedor2">
            
           
             
@@ -336,7 +336,7 @@
 
     <div class="form">
       
-       <ul class="tab-group">
+      <ul class="tab-group">
         <li class="tab active"><a href="#signup">Sign Up</a></li>
         <li class="tab"><a href="#login">Log In</a></li>
       </ul>
@@ -344,81 +344,71 @@
       <div class="tab-content">
         <div id="signup">   
           <h1>Sign Up for Free</h1>
-        <FORM ACTION="insertar_usu2.php" method="post" enctype="multipart/form-data" name="form1"> 
-          <TABLE width="761" height="310"> 
-                            <TR> 
-                               <TD class="tdate-1"> <p align="left" class="Estilo15">Nombre de Usuario:</p></TD>
-							    <TD class="tdate-1"><p align="left" class="Estilo16">En este campo  se creara el nombre de usuario por ejemplo (user92)</p></TD>
-                               <TD class="tdate-1"><p align="left"><textarea name="ususario" cols="50"></textarea>
-									
-								</p></TD></TR> 
-                            <TR> 
-                               <TD class="tdate-1"><div align="left"><span class="Estilo15">Password:</span></div></TD> 
-							   <TD class="tdate-1"><div align="left"><span class="Estilo16">En este campo  se creara tu Passwor de usuario por ejemplo (loas_gava*95)</span></div></TD> 
-							   
-                               <TD class="tdate-1">                                 <p align="left"><textarea name="password" cols="50"></textarea>
-                                
-								 </p></TD> 
-                            </TR> 
-                            <TR> 
-                               <TD class="tdate-1"><div align="left"><span class="Estilo15">Nombre:</span></div></TD> 
-                               <TD class="tdate-1">
-                                 <div align="left">
-                                   <textarea name="nombre" cols="50"></textarea>
-                                 </div></TD> 
-                            </TR>
-                            <TR>
-                            <TD class="tdate-1"><div align="left"><span class="Estilo15">Apellido Paterno:</span>
-                            </div>
-                            <TD class="tdate-1">
-                              <div align="left">
-                                <textarea name="paterno" cols="50"></textarea>                            
-                              </div>                            </TR>
-                            <TR>
-                            <TD class="tdate-1"><div align="left"><span class="Estilo15">Apellido Materno:</span>
-                            </div>
-                            <TD class="tdate-1">
-                              <div align="left">
-                                <textarea name="materno" cols="50"></textarea>                            
-                              </div>                            </TR>
-							  <TR>
-                            <TD class="tdate-1"><div align="left"><span class="Estilo15">correo:</span>
-                            </div>
-                            <TD class="tdate-1">
-							<p>En este campo solo se aceptan correos electronicos(ejemplo@gmail.com/hotmail.com,etc)</p>
-                              <div align="left">
-                                <textarea name="correo" cols="50"></textarea>                            
-                              </div>                            </TR>
-							  <TR>
-                            <TD class="tdate-1"><div align="left"><span class="Estilo15">Dirección:</span>
-                            </div>
-                            <TD class="tdate-1">
-							<p>Por ejemplo(U.H.I. San bartolo Edif A int 1)</p>
-                              <div align="left">
-                                <textarea name="direccion" cols="50"></textarea>                            
-                              </div>                            </TR>
-							   <TR>
-                            <TD class="tdate-1"><div align="left"><span class="Estilo15">Telefono:</span>
-                            </div>
-                            <TD class="tdate-1">
-							<p>Por ejemplo 222(1234567)</p>
-                              <div align="left">
-                                <textarea name="telefono" cols="50"></textarea>                            
-                              </div>                            </TR>
-                            
-                           
-                           
-                      </TABLE> 
-                            
-                      <br>
-					  <input type =button class="title-1" onClick="pregunta()" value ="Guardar">
-                        
-                      
-                      
-                      <p>&nbsp;</p>
-                            
-					</FORM>
-					
+          
+          <form action="insertar_usu2.php" method="post" name="form1">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Nombre de Usuario<span class="req">*</span>
+              </label>
+              <input type="text" name="ususario" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Contraseña<span class="req">*</span>
+              </label>
+              <input type="text" name="password"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Nombre<span class="req">*</span>
+            </label>
+            <input type="text" name="nombre"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Apellido Paterno<span class="req">*</span>
+            </label>
+            <input type="text" name="paterno"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Apellido Materno<span class="req">*</span>
+            </label>
+            <input type="text" name="materno"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Correo<span class="req">*</span>
+            </label>
+            <input type="text" name="correo"/>
+          </div>
+          
+          
+          <div class="field-wrap">
+            <label>
+              Direccion<span class="req">*</span>
+            </label>
+            <input type="text" name="direccion"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Telefono<span class="req">*</span>
+            </label>
+            <input type="text" name="telefono"/>
+          </div>
+          
+          <button type=button class="button button-block" onClick="pregunta()"/>Guardar</button>
+          
+          </form>
 
         </div>
         
@@ -452,15 +442,9 @@
       </div><!-- tab-content -->
       
 </div> <!-- /form -->
-    
+   
 
-        <script src="js/index.js"></script>
-
-      
-      
-        
-       
-          </form>    
+        <script src="js/index.js"></script>   
      </div>
 	
     
