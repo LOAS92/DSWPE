@@ -190,18 +190,7 @@
 		}
 </script>
 	
-	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
-	<script src="js/cufon-yui.js" type="text/javascript"></script>
-	<script src="js/cufon-replace.js" type="text/javascript"></script>
-	<script src="js/Vegur_500.font.js" type="text/javascript"></script>
-	<script src="js/Ropa_Sans_400.font.js" type="text/javascript"></script> 
-	<script src="js/FF-cash.js" type="text/javascript"></script>	  
-	<script src="js/tms-0.3.js" type="text/javascript"></script>
-	<script src="js/tms_presets.js" type="text/javascript"></script>
-	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-	<script src="js/script.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-	<script src="js/responsiveslides.js"></script>
+	
 	
 </head>
 <body id="cuerpo">
