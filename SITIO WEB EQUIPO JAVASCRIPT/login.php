@@ -337,13 +337,13 @@
     <div class="form">
       
       <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab active"><a href="#signup">REGISTRO</a></li>
         <li class="tab"><a href="#login">Log In</a></li>
       </ul>
       
       <div class="tab-content">
         <div id="signup">   
-          <h1>Sign Up for Free</h1>
+          <h1>REGISTRATE GRATIS</h1>
           
           <form action="insertar_usu2.php" method="post" name="form1">
           
