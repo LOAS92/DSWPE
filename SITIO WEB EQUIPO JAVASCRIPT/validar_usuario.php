@@ -19,7 +19,7 @@ if($row=mysql_fetch_array($result))
 	  echo"nombre=".$_SESSION['k_username']."<br>";
 	  if($row['tipo']==0)
        {
-	      header("Location:index_cliente.php");
+	      header("Location:inicio_cliente.php");
 	   }
 	    if($row['tipo']==1)
        {
@@ -30,19 +30,16 @@ if($row=mysql_fetch_array($result))
    }
    else{
 
-     
+     //error de password
      header("Location:errorloginc.php");
     }
 
 }
 else{
 
-   
-    header("Location:errorloginc.php");
-
-
+    //error de usuario
+    header("Location:errorloginc2.php");
 }
-
 
 ?>
 
