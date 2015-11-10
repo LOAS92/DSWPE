@@ -229,8 +229,8 @@
       </ul>  
           <h1>¡BIENVENIDO!</h1>
           
-          <form action="validar_usuario.php" method="POST">
-<form action="validar_usuario.php" method="post">
+          <form action="verificar.php" method="POST">
+<form action="verificar.php" method="post">
           
             <div class="field-wrap">
             <label>
