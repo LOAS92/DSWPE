@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.0.4
 -- http://www.phpmyadmin.net
 --
@@ -242,3 +242,25 @@ CREATE TABLE IF NOT EXISTS `pedido` (
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+--
+-- Estructura de tabla para la tabla `fotos`
+--
+
+CREATE TABLE IF NOT EXISTS `fotos` (
+ `imagen` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
+ `descripcion` varchar(200) COLLATE utf8mb4_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+INSERT INTO `fotos` (`imagen`, `descripcion`) VALUES
+('bruno.jpg', 'tiene tres años de edad es macho'),
+('peluk.jpg', 'm'),
+('peluk.jpg', 'es macho'),
+('3mascotas.jpg', 'me gusta'),
+('1.jpg', 'mi imagen'),
+('3.jpg', 'mi gatito'),
+('7.png', 'hdhhd'),
+('3.jpg', 'mi cachorro de 3 meses');
