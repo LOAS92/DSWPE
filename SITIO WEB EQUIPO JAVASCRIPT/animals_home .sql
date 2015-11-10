@@ -222,6 +222,23 @@ INSERT INTO `usuario` (`id_usuario`, `password`, `tipo`) VALUES
 ('chely', '3333', 0),
 ('rojas', '1212', 0);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `pedido`
+--
+
+CREATE TABLE IF NOT EXISTS `pedido` (
+  `numeroventa` int(11) NOT NULL AUTO_INCREMENT,
+  `imagen` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `nombre` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `precio` int(10) NOT NULL ,
+  `cantidad` int(10) NOT NULL ,
+  `talla` varchar(100) COLLATE utf8mb4_spanish_ci NOT NULL,
+  `subtotal` int(10) NOT NULL,
+  PRIMARY KEY (`numeroventa`) 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
