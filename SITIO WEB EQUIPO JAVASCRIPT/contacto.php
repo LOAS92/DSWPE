@@ -152,29 +152,22 @@
               
           </div>
           
-<div id="contenedor">
+<div id="contenedor"> <h5 class="titulo" align="justify">
+  
+  &nbsp; &nbsp; &nbsp; CONTACTANOS
   <div id="texto">
-    <h5 class="titulo">
-              ¡CONTACTANOS!
     </h5>
-	  <h3 align="justify"><br><br><br><br><br><br>
-			    <strong>Teléfonos:</strong>
-			    <ul><li>01(222) 111 00 44</li><li>01(224) 112 00 55</li><li>01(226) 113 00 45</li></ul><br><br>
-                <strong>Dirección:</strong><br>
-                Estamos en 5 de Mayo Col. Centro #4444.<br>En Horarios de 10:00 a 17:00 Lun-Vier<br>En Horarios de 09:00 a 13:00 Sab<strong><br>
-                <br>
-               Redes Sociales:</strong><br>
-               http://facebook.com/AnimalsHomeOficial<br>AnimalsHomeOficial@correo.com<br>AnimalsHomeOficial2@correo.com
-			  </h3>		   
-                       
+	  <h1 align="center">
+			    <strong>Teléfonos:</strong></h1>	
+			    <H2 align="center"><ul><li>01(222) 111 00 44</li><li>01(224) 112 00 55</li><li>01(226) 113 00 45</li></ul><br><br></H2>
+      <h1 align="center">
+			    <strong>Dirección:</strong></h1>
+                <H2 align="center">Estamos en 5 de Mayo Col. Centro #4444.<br>En Horarios de 10:00 a 17:00 Lun-Vier<br>En Horarios de 09:00 a 13:00 Sab<strong><br><br><br></H2>
+      <h1 align="center">
+			    <strong>Redes Sociales:</strong></h1>
+               <H2 align="center">>http://facebook.com/AnimalsHomeOficial<br>AnimalsHomeOficial@correo.com<br>AnimalsHomeOficial2@correo.com <BR><BR><BR> 
+			     <img src="images/Picture2.png" alt=""/> </H2>                 
   </div>
-		
-  <div id="catalogo-general"></div> 
 		</div>
-    
-    
-    
-    
-    
 </body>
 </html>
