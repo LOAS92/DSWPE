@@ -415,25 +415,26 @@
         <div id="login">   
           <h1>Welcome Back!</h1>
           
-          <form action="/" method="post">
+          <form action="validar_usuario.php" method="post">
           
             <div class="field-wrap">
             <label>
-              Email Address<span class="req">*</span>
+              Username<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+             <input type="text" name="usuario" required/>
+			 <!--- <input type="text" name="usuario" required/> --->
           </div>
           
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input type="password" name="password" required/>
           </div>
           
           <p class="forgot"><a href="#">Forgot Password?</a></p>
           
-          <button class="button button-block"/>Log In</button>
+          <button type="submit" class="button button-block"/>Log In</button>
           
           </form>
 
