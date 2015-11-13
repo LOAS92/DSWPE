@@ -244,12 +244,12 @@
 					</a>
 				</li>
 				<li>
-					<a href="carrito.php">
-						<img src="images/5.jpg" alt=""/>
+					<a href="muestra_fotos.php">
+						<img src="images/9.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
-							<span class="sdt_link">CARRITO</span>
-							<span class="sdt_descr">COMPRAS</span>
+							<span class="sdt_link">COMPARTE</span>
+							<span class="sdt_descr">MUESTRANOS A TU MASCOTA</span>
 						</span>
 					</a>
 				</li>
@@ -359,7 +359,7 @@
               <label>
                 Contraseña<span class="req">*</span>
               </label>
-              <input type="text" name="password"/>
+              <input type="password" name="password"/>
             </div>
           </div>
 
