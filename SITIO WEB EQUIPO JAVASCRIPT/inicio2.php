@@ -1,23 +1,22 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>INICIO</title>
-<link href="css/catalogo/accesorios.css" rel="stylesheet" type="text/css"/>
+<link href="css/principal.css" rel="stylesheet" type="text/css"/>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
-
- <link rel="stylesheet" href="css/catalogo/reset.css">
-  
- <link rel="stylesheet" href="css/catalogo/menuvertical.css">
+    <link href="css/slider.css" rel="stylesheet" type="text/css"/>
+     <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/formulario.css">
  
  
  
  <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/main.js"></script>
-	<script type="text/javascript"  src="js/scripts.js"></script>
-	 <script src="js/horizontal.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	
+ <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 </head>
 <body id="cuerpo">
     <div id="barra-logo">
@@ -28,7 +27,7 @@
               <ul id="sdt_menu" class="sdt_menu">
 				<li>
 					<a href="inicio.php">
-						<img src="images/2.jpg" alt=""/>
+						<img src="images/1.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">INICIO</span>
@@ -38,7 +37,7 @@
 				</li>
 				<li>
 					<a href="catalogo.php">
-						<img src="images/1.jpg" alt=""/>
+						<img src="images/2.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
 							<span class="sdt_link">CATALOGO</span>
@@ -154,48 +153,116 @@
           </div>
           
         <div id="contenedor">
+           
+           <div id="texto">
+               
+               <h5 class="titulo">
+              ¡Bienvenido a la mejor tienda online en México!
+               </h5>
+               
+               <p class="informacion">
+                  "Tenemos el mejor servicio al cliente GARANTIZADO y cuidamos que todo sea segura para consentir a tus mascotas, conocenos y disfruta de esta nueva experiencia que te lo agradecera tu mascota."
+                   
+                                 
+               </p>
+           </div>
+            
+         <section class="contenedor slider">
+         
+        
+        <ul id="slider" class="slider-wrapper">
+            <li class="slide-current">
+                
+                <img src="imagenes/imagenes slider/2.jpg" alt="slider imagen1">
+                <div class="caption">
+                    
+                    <h3 class="caption-title">AMIGOS</h3>
+                    <P> SON LOS MEJORES AMIGOS EN EL MUNDO
+                    </P>
+                </div>
+                
+            </li>
+            
+              <li>
+                
+                <img src="imagenes/imagenes slider/3.jpg" alt="slider imagen1">
+                <div class="caption">
+                    
+                    <h3 class="caption-title">DARIAN LA VIDA POR TI</h3>
+                    <P>POR QUE ELLOS TE DEMUESTRAN AMOR</P>
+                </div>
+                
+            </li>
+            
+         <li>
+                
+                <img src="imagenes/imagenes slider/1.jpg"alt="slider imagen1">
+                <div class="caption">
+                    
+                    <h3 class="caption-title">CERO RIVALIDAD</h3>
+                    <P>NO HAY RIVALIDADES ENTRE ELLOS</P>
+                </div>
+                
+            </li>
+            
+        
+        </ul>
+        
+       <!-- controles-->
+       <ul id="controles" class="controles">
+             </ul>
+      
        
-               <div id="texto">
-               <h5 class="titulo">¡TU Y TU MASCOTA!</h5>         
-              </div>
-          <div id="menu-vertical">
+    </section>   
+            
+
+    <div class="form">
+      
+      
+      
+      
+        
+        <div id="login"> 
+         <ul class="tab-group">
+        
+        <li class="tab">INICAR SESION</li>
+      </ul>  
           <h1>¡BIENVENIDO!</h1>
-		   <p class="informacion">
-              ¡Aquí podrás compartir la foto de tu mascota!
-           </p><BR>
-		   	<center>
-			<img src="images/10.png" height="150px" width="150px"/><a href="insert_foto.php"><h5 class="titulo">¡SUBE TU FOTO AQUÍ!</h5> </a>
-			<a href="salir_cliente.php"> <h1>SALIR</h1> </a>
-			</center>
-		  
-	</div>
-	  <div id="catalogo-general">
-	  				<?php
-		include 'conexion.php';
-		$con="select * from fotos "; 
-		$re=mysql_query($con)or die(mysql_error());
-		while ($f=mysql_fetch_array($re)) {
-		?>
-		&nbsp;&nbsp;				
-			<div class="producto"> 
-			<center>
-				<img src="perros/<?php echo $f['imagen'];?>"><br>
-				<span class="span"><?php echo utf8_encode($f['descripcion']);?></span><br>
-			</center>
-			</div>	
-		<?php
+		  <h5>Para subir alguna foto es necesario que inicies sesion o te registres.</h5>
+          <form action="validar_usuario2.php" method="POST">          
+            <div class="field-wrap">
+            <label>
+              Usuario<span class="req">*</span>
+            </label>
+            <input type="text" name="usuario" required/>
+          </div>
           
-              }   
-          ?>
+          <div class="field-wrap">
+         
+		   <label>
+              Contraseña<span class="req">*</span>
+            </label>
+            <input type="password" name="password" required/>
+          </div>
           
-          </div> 
-</div>
+          <p class="forgot"><a href="login.php">Registrame</a></p>
+          
+          <button type="submit"  class="button button-block"/>Ingresar</button>
+          
+          </form>
 
-       
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+   
 
-    
-    
-    
+        <script src="js/index.js"></script>
+
+          	
+
+ 
     
 </body>
 </html>
