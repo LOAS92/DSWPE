@@ -60,7 +60,7 @@
 					
 				</li>
 				<li>
-					<a href="#">
+					<a href="tallas.php">
 						<img src="images/4.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -70,12 +70,12 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
-						<img src="images/5.jpg" alt=""/>
+					<a href="muestra_fotos.php">
+						<img src="images/9.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
-							<span class="sdt_link">CARRITO</span>
-							<span class="sdt_descr">COMPRAS</span>
+							<span class="sdt_link">COMPARTE</span>
+							<span class="sdt_descr">MUESTRANOS A TU MASCOTA</span>
 						</span>
 					</a>
 				</li>
@@ -156,12 +156,18 @@
         <div id="contenedor">
        
                <div id="texto">
-               <h5 class="titulo">
-              ¡TU Y TU MASCOTA!
-               </h5>
-                       
-       </div>
-       
+               <h5 class="titulo">¡TU Y TU MASCOTA!</h5>         
+              </div>
+          <div id="menu-vertical">
+          <h1>¡BIENVENIDO!</h1><br>
+		   <p class="informacion">
+              ¡Aquí podrás compartir la foto de tu mascota!
+           </p><br>
+		   	<center>
+			<img src="images/10.png" height="150px" width="150px"/><a href="insert_foto.php"><h5 class="titulo">¡SUBE TU FOTO AQUÍ!</h5> </a>
+			</center>
+	</div>
+	  <div id="catalogo-general">
 	  				<?php
 		include 'conexion.php';
 		$con="select * from fotos "; 
@@ -169,22 +175,22 @@
 		while ($f=mysql_fetch_array($re)) {
 		?>
 		&nbsp;&nbsp;				
-			<div class="producto">
+			<div class="producto"> 
 			<center>
 				<img src="perros/<?php echo $f['imagen'];?>"><br>
 				<span class="span"><?php echo utf8_encode($f['descripcion']);?></span><br>
 			</center>
-		</div>
+			</div>	
 		<?php
           
               }   
-          
           ?>
           
           </div> 
+</div>
 
+       
 
-    
     
     
     
