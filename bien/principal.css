@@ -1,0 +1,106 @@
+#cuerpo{
+    margin: 0;
+}
+
+
+#barra-logo{
+    float: left;
+    background: #95c033;
+    box-shadow: none;
+    width:1020px ;
+    height: 160px;
+    display: block;
+    margin:0px 165px;
+    }
+
+#imagen-logo{
+    
+    float:left;
+  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-image: url("../imagenes/logo.png"); background-size: cover; height: 200px; width: 400px; margin: -10px 300px; 
+}
+
+
+
+#menu{
+    
+    
+    float: left;
+      height: 100px;
+    margin:auto 165px;
+     width:1020px ;
+    height: 85px;
+    background:#1B0A2A;
+    
+    
+}
+
+
+#contenedor{
+    
+    float: left;
+     height: 700px;
+    margin:auto 165px;
+     width:1020px ;
+     background:#E6E6E6;
+	 border-radius: 0px 0px 25px 25px;
+-moz-border-radius: 0px 0px 25px 25px;
+-webkit-border-radius: 0px 0px 25px 25px;
+border: 0px solid #000000;
+    
+    
+    }
+	
+	
+	
+	
+	
+
+
+
+#texto{
+    
+    float: left;
+    width: 600px;
+    height:0 auto;
+    margin: 15px 15px;
+  
+    
+    
+}
+
+.titulo{
+    
+    font-family: "GothamRnd-Bold", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #008AA8;
+    margin-bottom: 25px;
+    float: left;
+    margin:30px 20px;
+    
+}
+
+
+.informacion{
+    
+    font-family: "GothamRnd-Bold", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    
+}
+
+#contenedor2{
+    
+    float: left;
+     height: 950px;
+    margin:auto 165px;
+     width:1020px ;
+     background:#E6E6E6;
+	 border-radius: 0px 0px 25px 25px;
+-moz-border-radius: 0px 0px 25px 25px;
+-webkit-border-radius: 0px 0px 25px 25px;
+border: 0px solid #000000;
+    
+    
+    }
+
+
